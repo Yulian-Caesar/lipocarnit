@@ -1,0 +1,29 @@
+.footer {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer__privacy {
+  color: #747678;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.footer__privacy:hover {
+  color: #7ec21c;
+  text-decoration: underline;
+}
+
+.footer__product-name {
+  color: #7ec21c;
+  font-size: 20px;
+  line-height: 1;
+  font-weight: 700;
+  margin-top: 3px;
+}
