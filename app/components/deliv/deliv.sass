@@ -72,3 +72,19 @@
 				margin-top: 5px
 				br
 					display: none
+.deliv-arrow
+	position: relative
+	&:before, &:after
+		content: ''
+		position: absolute
+		top: 50%
+		transform: translateY(-50%)
+		background: url(../img/deliv-arrow.png) no-repeat center
+		width: 50px
+		height: 47px
+		+r(1023)
+			display: none
+	&:before
+		left: -30px
+	&:after
+		right: -40px
