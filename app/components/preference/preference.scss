@@ -1,5 +1,5 @@
 .preference {
-  padding: 70px 0;
+  padding: 60px 0 80px;
 }
 
 .preference-title {
@@ -17,7 +17,7 @@
 
 .preference-content {
   max-width: 570px;
-  padding-top: 130px;
+  padding-top: 133px;
 }
 
 .preference-list {
@@ -44,7 +44,7 @@
 .preference-list__text {
   color: #3e3d4b;
   font-size: 24px;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .preference-list__text span {
@@ -55,7 +55,7 @@
   position: relative;
   line-height: 1;
   font-weight: 700;
-  margin-top: 137px;
+  margin-top: 144px;
 }
 
 .preference-conclusion:after {
@@ -265,6 +265,10 @@
 }
 
 @include r(1219) {
+  .preference {
+    padding: 30px 0 35px;
+  }
+
   .reviews-title__smaller {
     font-size: 20px;
   }

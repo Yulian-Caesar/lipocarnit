@@ -14,7 +14,7 @@
 }
 
 .last-section .intro-wrap {
-  padding: 183px 0 167px;
+  padding: 148px 0 173px;
 }
 
 .last-section .form {
@@ -23,7 +23,7 @@
 
 @include r(1219) {
   .last-section .intro-wrap {
-    padding-top: 60px;
+    padding-top: 95px;
   }
 
 
@@ -36,6 +36,10 @@
 
   .last-section .form {
     margin-top: 0;
+  }
+
+  .last-section:before {
+    display: none;
   }
 
 }
