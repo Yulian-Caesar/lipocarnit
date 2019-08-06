@@ -2,6 +2,17 @@
   display: none;
 }
 
+.last-section:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: url("../img/last-section__line.png") no-repeat center;
+  transform: rotate(180deg);
+}
+
 .last-section .intro-wrap {
   padding: 183px 0 167px;
 }

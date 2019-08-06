@@ -331,6 +331,10 @@ svg {
 	white-space: nowrap;
 }
 
+.deliv.waves:after {
+	display: none;
+}
+
 .waves{
 	position: relative;
 	&:before{
@@ -340,7 +344,7 @@ svg {
 		left: 0;
 		background: url(../img/line-top.png) repeat-x center;
 		width: 100%;
-		height: 60px;
+		height: 55px;
 		@include r(1023){	
 			display: none;
 		}
