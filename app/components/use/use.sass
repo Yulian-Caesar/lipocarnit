@@ -1,6 +1,197 @@
 .use
 	padding: 55px 0 90px
+	+r(1219)
+		padding: 25px 0 40px
+	.container
+		position: relative
+		z-index: 0
+		&:after
+			content: ''
+			position: absolute
+			top: -58px
+			right: 50%
+			transform: translateX(15%)
+			background: url(../img/use-bg.png) no-repeat center
+			width: 1493px
+			height: 1080px
+			z-index: -1
+			+r(1219)
+				background-size: contain
+				width: 1211px
+				height: 798px
+			+r(1023)
+				background: none
 	&-content
+		margin-top: 170px
 		max-width: 450px
 		display: block
 		margin-left: auto
+		counter-reset: use-box
+		position: relative
+		z-index: 0
+		+r(1219)
+			margin-top: 100px
+			max-width: 405px
+		+r(1023)
+			max-width: 100%
+			margin-top: 20px
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+		+r(639)
+			align-items: center
+			flex-direction: column
+		&:before
+			content: ''
+			position: absolute
+			top: -105px
+			right: 490px
+			background: url(../img/use-girl.png) center no-repeat
+			width: 775px
+			height: 862px
+			+r(1219)
+				background-size: contain
+				right: 430px
+				width: 608px
+				height: 760px
+				top: -91px
+			+r(1023)
+				right: 379px
+				width: 271px
+				height: 100%
+				top: 62px
+			+r(767)
+				display: none
+	&-box
+		margin-bottom: 90px
+		position: relative
+		padding-left: 80px
+		+r(1219)
+			padding-left: 70px
+			margin-bottom: 70px
+		+r(1023)
+			width: auto
+			max-width: 245px
+			margin-bottom: 0
+			padding-left: 0
+			padding-top: 60px
+			margin-left: 15px
+			margin-right: 15px
+		+r(767)
+			margin: 0 0 15px
+		&:nth-child(2)
+			position: relative
+			z-index: 0
+			&:after
+				content: ''
+				position: absolute
+				left: 80px
+				top: 50%
+				transform: translateY(-50%)
+				width: 1px
+				height: 209px
+				background-color: #dadada
+				background-image: linear-gradient(to top, #7fc41c 0%, #c1f74d 50%, #f2ea16 100%)
+				z-index: -1
+				+r(1219)
+					left: 70px
+					height: 170px
+				+r(1023)
+					display: none
+			.use-box__title
+				position: relative
+				z-index: 0
+				&:before
+					content: ''
+					height: 90px
+					width: 4px
+					background: #fff
+					position: absolute
+					left: 0
+					top: -17px
+					z-index: -1
+					+r(1219)
+						height: 80px
+						top: -13px
+					+r(1023)
+						display: none
+			.use-box__subtitle
+				position: relative
+				z-index: 1
+		&:nth-child(3)
+			margin-bottom: 55px
+			+r(1023)
+				margin-bottom: 0
+		&:before
+			counter-increment: use-box
+			content: counter(use-box)
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			left: 0
+			color: #c1f74d
+			font-family: "PT Sans"
+			font-size: 100px
+			font-weight: 700
+			line-height: 1
+			+r(1219)
+				font-size: 90px
+			+r(1023)
+				font-size: 70px
+				top: 0
+				left: 50%
+				transform: translateY(0) translateX(-50%)
+				line-height: 54px
+		&__title
+			font-size: 26px
+			font-weight: 700
+			+r(1219)
+				font-size: 24px
+			+r(1023)
+				font-size: 20px
+				text-align: center
+		&__subtitle
+			color: #2b3035
+			font-family: "PT Sans"
+			font-size: 22px
+			margin-top: 8px
+			+r(1219)
+				font-size: 20px
+			+r(1023)
+				font-size: 18px
+				text-align: center
+				margin-top: 5px
+	&-pack
+		position: relative
+		left: -35px
+		width: 444px
+		max-width: 100%
+		+r(1219)
+			width: 350px
+		+r(1023)
+			margin-left: auto
+			margin-top: 30px
+		+r(767)
+			position: relative
+			margin-top: -310px
+			margin-bottom: 10px
+		+r(639)
+			margin-top: 20px
+			margin-bottom: 0
+			margin-left: auto
+			margin-right: auto
+			position: relative
+			left: -18px
+@supports ((background-clip: text) or (-webkit-background-clip: text)) and ((text-fill-color: transparent) or (-webkit-text-fill-color: transparent))
+	.use-box:before
+		background-image: linear-gradient(to top, #7fc41c 0%, #c1f74d 50%, #f2ea16 100%)
+		background-size: cover
+		-webkit-background-clip: text
+		background-clip: text
+		-webkit-text-fill-color: transparent
+		text-fill-color: transparent
+
+@media (max-width: 767px) and (min-width: 480px)
+	.use-content
+		flex-direction: column
+	.use-box

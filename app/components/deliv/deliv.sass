@@ -1,0 +1,74 @@
+.deliv
+	background-color: #f6f6f6
+	padding: 140px 0
+	+r(1219)
+		padding: 110px 0
+	&-content
+		margin-top: 50px
+		display: flex
+		justify-content: space-between
+		+r(1219)
+			margin-top: 40px
+		+r(1023)
+			margin-top: 25px
+		+r(767)
+			justify-content: center
+			flex-wrap: wrap
+			margin-top: 20px
+	&-box
+		width: 32%
+		&:not(:last-child)
+			+r(767)
+				margin-bottom: 20px
+		+r(767)
+			max-width: 310px
+			width: 100%
+		&__img
+			display: flex
+			justify-content: center
+			img
+				+r(1219)
+					width: 230px
+				+r(1023)
+					width: 200px
+		&__title
+			color: #292929
+			font-size: 24px
+			font-weight: 700
+			text-align: center
+			margin-top: 40px
+			position: relative
+			padding-bottom: 12px
+			+r(1219)
+				font-size: 22px
+				margin-top: 25px
+			+r(1023)
+				margin-top: 15px
+				font-size: 20px
+			+r(639)
+				margin-top: 10px
+			&:before
+				content: ''
+				position: absolute
+				bottom: 0
+				left: 50%
+				transform: translateX(-50%)
+				width: 93px
+				height: 2px
+				background-color: #b99ac4
+		&__text
+			text-align: center
+			color: #2b3035
+			font-size: 20px
+			line-height: 26px
+			margin-top: 23px
+			+r(1219)
+				font-size: 18px
+				margin-top: 10px
+				line-height: normal
+			+r(1023)
+				font-size: 17px
+			+r(639)
+				margin-top: 5px
+				br
+					display: none
