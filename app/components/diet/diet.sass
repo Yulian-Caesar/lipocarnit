@@ -1,0 +1,273 @@
+.diet
+	padding: 114px 0 165px
+	background: #f6f6f6
+	.title
+		+r(1023)
+			br
+				display: none
+	+r(1219)
+		padding: 100px 0
+	&-content
+		padding-top: 66px
+		position: relative
+		+r(1219)
+			padding-top: 40px
+		+r(1023)
+			padding-top: 30px
+		+r(767)
+			padding-top: 25px
+		+r(420)
+			padding-top: 20px
+		&:before
+			content: ''
+			position: absolute
+			top: -155px
+			right: 50%
+			transform: translateX(84%)
+			background: url(../img/diet-bg.png) no-repeat 50% 50%
+			width: 1244px
+			height: 900px
+	&-left
+		max-width: 510px
+		position: relative
+		z-index: 1
+		+r(1219)
+			max-width: 460px
+		+r(1023)
+			max-width: 440px
+		+r(767)
+			max-width: 100%
+		&:before
+			content: ''
+			position: absolute
+			left: 478px
+			top: -34px
+			background: url(../img/diet-girl.png) no-repeat 50% 50%
+			width: 779px
+			height: 995px
+			+r(1219)
+				background-size: contain
+				left: 440px
+				width: 642px
+				height: 822px
+				top: -5px
+			+r(1023)
+				left: 409px
+				width: 531px
+				height: 682px
+				top: -2px
+			+r(767)
+				display: none
+	&-box
+		box-shadow: 0 0 35px rgba(134, 147, 162, 0.25)
+		border-radius: 4px
+		background-color: #ffffff
+		padding-top: 35px
+		&:not(:last-child)
+			margin-bottom: 60px
+			+r(1219)
+				margin-bottom: 40px
+			+r(1023)
+				margin-bottom: 30px
+			+r(767)
+				margin-bottom: 25px
+			+r(420)
+				margin-bottom: 15px
+		&:nth-child(1)
+			max-width: 450px
+			padding-left: 140px
+			padding-top: 40px
+			padding-bottom: 45px
+			margin-left: auto
+			position: relative
+			+r(1023)
+				max-width: 400px
+				padding-left: 105px
+				padding-top: 30px
+				padding-bottom: 30px
+			+r(767)
+				max-width: 500px
+				margin-right: auto
+				padding-left: 30px
+				padding-right: 125px
+			+r(420)
+				padding: 20px
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: -45px
+				transform: translateY(-50%)
+				background: url(../img/diet-1.png) no-repeat center
+				width: 156px
+				height: 284px
+				+r(1219)
+					background-size: contain
+					width: 127px
+					height: 233px
+					left: -15px
+				+r(1023)
+					width: 104px
+					height: 189px
+				+r(767)
+					left: auto
+					right: 10px
+				+r(420)
+					display: none
+		&:nth-child(2)
+			max-width: 340px
+			padding: 30px 0 25px 30px
+			position: relative
+			+r(1023)
+				padding: 30px 0 30px 30px
+			+r(767)
+				max-width: 500px
+				margin-right: auto
+				margin-left: auto
+				padding-right: 145px
+			+r(420)
+				padding: 20px
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				right: -130px
+				transform: translateY(-55%)
+				background: url(../img/diet-2.png) no-repeat center
+				width: 181px
+				height: 238px
+				+r(1023)
+					background-size: contain
+					top: 53%
+					right: -69px
+					transform: translateY(-55%)
+					width: 143px
+					height: 189px
+				+r(767)
+					right: -6px
+				+r(420)
+					display: none
+		&:nth-child(3)
+			max-width: 413px
+			padding-left: 90px
+			padding-top: 35px
+			padding-right: 30px
+			padding-bottom: 30px
+			position: relative
+			margin-left: auto
+			+r(1023)
+				max-width: 390px
+				padding-left: 70px
+				padding-top: 30px
+			+r(767)
+				max-width: 500px
+				margin-right: auto
+				padding-left: 30px
+				padding-right: 120px
+			+r(420)
+				padding: 20px
+			&:before
+				content: ''
+				position: absolute
+				top: 50%
+				left: -84px
+				transform: translateY(-47%)
+				background: url(../img/diet-3.png) no-repeat center
+				width: 170px
+				height: 181px
+				+r(1023)
+					background-size: contain
+					left: -72px
+					width: 152px
+					height: 160px
+				+r(767)
+					left: auto
+					right: -10px
+				+r(420)
+					display: none
+		&__title
+			color: #3e3d4b
+			font-family: "PT Sans"
+			font-size: 20px
+			font-weight: 400
+			position: relative
+			padding-bottom: 18px
+			line-height: 28px
+			+r(1023)
+				font-size: 19px
+				line-height: normal
+			+r(767)
+				br
+					display: none
+			+r(420)
+				text-align: center
+				padding-bottom: 15px
+			&:before
+				content: ''
+				width: 110px
+				height: 2px
+				background-color: #dadada
+				position: absolute
+				bottom: 0
+				left: 0
+				+r(420)
+					left: 50%
+					transform: translateX(-50%)
+		&__subtitle
+			color: #7ec21c
+			font-size: 24px
+			font-weight: 700
+			margin-top: 25px
+			+r(1023)
+				font-size: 22px
+				br
+					display: none
+			+r(420)
+				text-align: center
+				margin-top: 15px
+	&-bottom
+		margin-top: 100px
+		display: flex
+		align-items: flex-end
+		position: relative
+		z-index: 2
+		+r(1219)
+			margin-top: 50px
+		+r(1023)
+			flex-direction: column
+			align-items: center
+			margin-top: 35px
+		+r(767)
+			margin-top: 25px
+		+r(420)
+			margin-top: 20px
+		&__text
+			color: #3e3d4b
+			font-family: "PT Sans"
+			font-size: 30px
+			font-weight: 700
+			line-height: 34px
+			+r(1219)
+				font-size: 28px
+				line-height: 1.1
+			+r(1023)
+				text-align: center
+				font-size: 26px
+				br
+					display: none
+			+r(767)
+				font-size: 24px
+			+r(420)
+				font-size: 22px
+		&__btn
+			width: 220px
+			height: 65px
+			margin-left: 107px
+			margin-bottom: 12px
+			+r(1219)
+				margin-left: 70px
+			+r(1023)
+				margin-left: 0
+				margin-top: 20px
+			+r(420)
+				margin-top: 15px
