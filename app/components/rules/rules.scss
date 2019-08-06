@@ -1,6 +1,6 @@
 .rules {
   position: relative;
-  padding: 60px;
+  padding: 60px 0;
 }
 
 .rules:after {
@@ -12,7 +12,7 @@
   left: 50%;
   bottom: 0;
   transform: translate(-50%, 0);
-  background: linear-gradient(rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 1) 21%, rgba(255, 255, 255, 1) 100%);
 }
 
 .rules-title {
@@ -21,24 +21,24 @@
 
 .rules-box {
   position: relative;
-  padding-bottom: 60px;
 }
 
 
 .rules-wrap {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
 .rules-item {
   position: relative;
   text-align: center;
-  padding-top: 250px;
+  margin-top: 250px;
   color: #3e3d4b;
-  max-width: 330px;
+  max-width: 370px;
 }
 
-.rules-item:after {
+.rules-item::after {
   content: "";
   position: absolute;
   height: 20px;
@@ -46,18 +46,32 @@
   background: url("../img/rules-arrow.png") no-repeat center;
 }
 
-.rules-item:nth-child(2n) {
-  padding-top: 0;
+.rules-item:nth-child(1)::after {
+  top: 10px;
+  right: 19px;
+  transform: rotate(-90deg);
 }
+
+.rules-item:nth-child(2)::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -40px;
+}
+
+.rules-item:nth-child(3)::after {
+  top: 10px;
+  left: 19px;
+  transform: rotate(90deg);
+}
+
 
 .rules-item__title {
   display: inline-block;
   position: relative;
-  padding: 10px;
   font-size: 28px;
   line-height: 1;
   font-weight: 700;
-  margin-bottom: 35px;
+  margin-bottom: 26px;
 }
 
 .rules-item__title:after {
@@ -73,13 +87,14 @@
 
 .rules-item__text {
   font-size: 20px;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .rules-img {
   position: relative;
   text-align: center;
-  margin-top: -170px;
+  max-width: 493px;
+  margin: -175px auto 0;
 }
 
 .rules-circle {
@@ -95,16 +110,16 @@
     #f8f8f8 0%,
     #f8f8f8 48%,
     #ffffff 49%,
-    #f8f8f8 49.5%,
+    #f8f8f8 49.2%,
     #f8f8f8 54%,
     #ffffff 55%,
-    #f8f8f8 55.5%,
+    #f8f8f8 55.2%,
     #f8f8f8 60%,
     #ffffff 61%,
-    #f8f8f8 61.5%,
+    #f8f8f8 61.2%,
     #f8f8f8 66%,
     #ffffff 67%,
-    #f8f8f8 67.5%,
+    #f8f8f8 67.2%,
     #f8f8f8 100%
   );
 }
@@ -124,3 +139,135 @@
   z-index: -1;
 }
 
+@media screen and (min-width: 640px){
+  .rules-item:nth-child(2n) {
+    margin-top: 0;
+  }
+}
+
+@include r(1219) {
+  .rules-title {
+    margin-bottom: 30px;
+  }
+
+  .rules-item {
+    max-width: 310px;
+  }
+
+  .rules-item__title {
+    font-size: 26px;
+  }
+
+  .rules-item__text {
+    font-size: 18px;
+  }
+
+  .rules-img {
+    max-width: 360px;
+  }
+
+}
+
+@include r(1023) {
+  .rules:after {
+    height: 240px;
+  }
+
+  .rules-title {
+    margin-bottom: 20px;
+  }
+
+  .rules-item {
+    margin-top: 200px;
+    max-width: 230px;
+  }
+
+  .rules-item:nth-child(1)::after {
+    right: 0;
+  }
+
+  .rules-item:nth-child(2)::after {
+    bottom: -25px;
+  }
+
+  .rules-item:nth-child(3)::after {
+    left: 0;
+  }
+
+  .rules-item__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .rules-item__text {
+    font-size: 16px;
+  }
+
+  .rules-img {
+    max-width: 300px;
+  }
+
+  .rules-circle {
+    width: 750px;
+    height: 750px;
+    left: calc(50% - 375px);
+  }
+
+  .rules-circle:before  {
+    width: 800px;
+    height: 800px;
+  }
+
+}
+
+@include r(767) {
+
+  .rules-item {
+    margin-top: 40px;
+  }
+
+  .rules-item:nth-child(1)::after,
+  .rules-item:nth-child(3)::after{
+    top: inherit;
+    bottom: -20px;
+  }
+
+  .rules-item:nth-child(1)::after {
+    transform: rotate(-45deg);
+  }
+
+  .rules-item:nth-child(3)::after {
+    top: inherit;
+    bottom: -20px;
+    transform: rotate(45deg);
+  }
+
+  .rules-img {
+    margin: 0 auto;
+  }
+
+  .rules-circle {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 639px){
+  .rules-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rules-item {
+    margin-top: 0;
+    max-width: 100%;
+  }
+
+  .rules-item + .rules-item{
+    margin-top: 20px;
+  }
+
+  .rules-img,
+  .rules-item::after{
+    display: none;
+  }
+}

@@ -104,7 +104,7 @@ svg {
 .form {
 	width: 270px;
 	flex: none;
-	padding: 35px 20px 45px;
+	padding: 30px 20px 45px;
 	box-shadow: 2px 9px 43px rgba(168, 145, 190, 0.3);
 	font-family: 'Roboto', sans-serif;
 	background: #ffffff;
@@ -124,14 +124,14 @@ svg {
 .price {
 	position: relative;
 	display: flex;
-	margin-bottom: 25px;
+	margin-bottom: 23px;
 }
 
 .price:before {
 	content: "";
 	position: absolute;
 	height: 100%;
-	width: 2px;
+	width: 1px;
 	background: rgba(209, 208, 208, .6);
 	left: 50%;
 	bottom: 0;
@@ -265,8 +265,9 @@ svg {
 }
 
 .input-box {
+	max-width: 220px;
+	margin: 0 auto 15px;
 	position: relative;
-	margin-bottom: 15px;
 }
 
 .form-field {

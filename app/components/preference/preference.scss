@@ -1,0 +1,38 @@
+.preference {
+  padding: 70px 0;
+}
+
+.preference-title {
+  margin-bottom: 20px;
+}
+
+.preference-title__another {
+  display: block;
+  color: #7ec21c;
+}
+
+.preference-list {
+
+}
+
+.preference-list__item {
+  display: flex;
+  align-items: center;
+}
+
+.preference-list__img {
+  width: 70px;
+  flex: none;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.preference-list__text {
+  color: #3e3d4b;
+  font-size: 24px;
+  line-height: 1;
+}
+
+.preference-list__text span {
+  color: #939393;
+}

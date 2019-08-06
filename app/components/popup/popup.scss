@@ -1,0 +1,76 @@
+.ever-popup__close:after,
+.ever-popup__close:before {
+  background: #7ec21c;
+}
+
+.popup-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 964px;
+  flex: none;
+  box-shadow: 2px 9px 43px rgba(168, 145, 190, 0.32);
+  background: #ffffff url("../img/intro-people.png") no-repeat left 20px bottom 20px;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.popup-content {
+  max-width: 300px;
+  padding: 40px 0 0 40px;
+}
+
+.popup-title {
+  color: #7ec21c;
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  line-height: 1;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.popup-subtitle {
+  color: #7e3498;
+  font-family: "PT Sans";
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.popup-product {
+  position: absolute;
+  width: 100%;
+  max-width: 406px;
+  left: -20px;
+  bottom: -65px;
+}
+
+.popup-form {
+  width: 290px;
+  padding: 30px 25px;
+  border: 4px solid #7ec21c;
+}
+
+.popup-form .timer-item__text {
+  margin-top: 10px;
+}
+
+.popup-form .price,
+.popup-form .timer-box,
+.popup-form .form-title {
+  margin-bottom: 15px;
+}
+
+@include r(1023) {
+  .popup-content,
+  .popup-product {
+    display: none;
+  }
+
+  .popup-wrap {
+    width: 290px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+}
