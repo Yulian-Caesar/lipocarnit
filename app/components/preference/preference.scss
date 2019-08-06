@@ -225,6 +225,7 @@
 
 .reviews-arrow {
   display: flex;
+  flex: none;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
@@ -473,6 +474,18 @@
     justify-content: center;
     order: 2;
     margin: 10px 0 0;
+  }
+
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .reviews-content_right {
+    width: 100%;
+  }
+
+  .reviews-conclusion {
+    width: 100%;
+    margin-left: 10px;
   }
 
 }

@@ -234,3 +234,9 @@
     font-size: 26px;
   }
 }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .intro-content {
+    margin-right: auto;
+  }
+}
