@@ -27,3 +27,15 @@
   font-weight: 700;
   margin-top: 3px;
 }
+
+@include r(1219) {
+  .footer {
+    padding-bottom: 20px;
+  }
+}
+
+@include r(1023) {
+  .footer {
+    padding: 20px 0;
+  }
+}

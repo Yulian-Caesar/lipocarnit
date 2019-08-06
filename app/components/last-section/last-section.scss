@@ -9,3 +9,22 @@
 .last-section .form {
   margin-top: 110px;
 }
+
+@include r(1219) {
+  .last-section .intro-wrap {
+    padding-top: 60px;
+  }
+
+
+}
+
+@include r(1023) {
+  .last-section .intro-wrap {
+    padding: 0;
+  }
+
+  .last-section .form {
+    margin-top: 0;
+  }
+
+}
